@@ -44,6 +44,8 @@ def add_list_member(email,name):
 
     # adding lead mail to maillist in mailgun account
     mailList_url = "https://api.mailgun.net/v3/lists/santhi@{0}/members".format(domain)
+
+
     result = requests.post(mailList_url, auth=('api', key), data={
         'subscribed': True,
         'address': email,

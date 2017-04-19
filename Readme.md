@@ -50,6 +50,12 @@ flaskapp/hello.py
 		domain = <YOUR_MAILGUN_DOMAIN> if it is sandbox domain, It will not sent mail to another mail ids, It's sends only authorized mail ids only.
 
 
+Change mailList_url
+	mailList_url = "https://api.mailgun.net/v3/lists/<LIST@YOUR_DOMAIN_NAME>/members"
+
+Here we need to set your mail list domain name at LIST@YOUR_DOMAIN_NAME
+	Refer https://documentation.mailgun.com/user_manual.html#mailing-lists
+
 Server setup:
      Enviroment settings and keys settings are completed,
      Now you need to add and run these files on your server(ex: AWS, heroku etc)and **you will get url for this app**.
@@ -73,7 +79,7 @@ I have given that url  while cretation of webhook on my sample page like
 
 Verify Token: abc123
 
-Note: YOu dont need to setup any php files.Its pure python.
+Note: You don't need to setup any php files.Its pure python.
 -----------------------------------------------------------------------------
 
 For creating webhook on facebook page refer the following urls,
