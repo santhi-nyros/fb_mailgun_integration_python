@@ -51,9 +51,11 @@ flaskapp/hello.py
 
 
 Change mailList_url
-	mailList_url = "https://api.mailgun.net/v3/lists/<LIST@YOUR_DOMAIN_NAME>/members"
+
+	mailList_url = "https://api.mailgun.net/v3/lists/LIST@YOUR_DOMAIN_NAME/members"
 
 Here we need to set your mail list domain name at LIST@YOUR_DOMAIN_NAME
+
 	Refer https://documentation.mailgun.com/user_manual.html#mailing-lists
 
 Server setup:
