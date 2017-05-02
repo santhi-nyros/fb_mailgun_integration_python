@@ -44,10 +44,13 @@ flaskapp/hello.py
 
 
 flaskapp/hello.py
+
 	def add_list_member(email,name):
 		#Mail-gun api keys
 		key = <YOUR_MAILGUN_API_KEY>
-		domain = <YOUR_MAILGUN_DOMAIN> if it is sandbox domain, It will not sent mail to another mail ids, It's sends only authorized mail ids only.
+		domain = <YOUR_MAILGUN_DOMAIN>
+		
+		if it is sandbox domain, It will not sent mail to another mail ids, It's sends only authorized mail ids only.
 
 
 Change mailList_url
